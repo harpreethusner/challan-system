@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 export default function Home() {
   const [userName, setUserName] = useState("");
 
-  async function getUserDetail() {   
+  async function getUserDetail() {
     let name = await localStorage.getItem("fullName");
     if (name?.length > 0) {
       setUserName(name);
@@ -17,5 +17,5 @@ export default function Home() {
     getUserDetail();
   }, []);
 
-  return <div>home {userName}</div>;
+  return <div>home harpret {userName}</div>;
 }
