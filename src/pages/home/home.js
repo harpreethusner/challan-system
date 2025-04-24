@@ -20,9 +20,8 @@ export default function Home() {
 
   return (
     <>
-      
-        <Navbar />
-      <div>home harpret {userName}</div>
+      <Navbar />
+      <div>home panel {userName}</div>
     </>
   );
 }

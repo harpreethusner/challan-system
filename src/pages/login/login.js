@@ -66,7 +66,7 @@ export const Login = () => {
                 htmlFor="email"
                 className="block text-sm/6 font-medium text-gray-900"
               >
-                username
+                username email address
               </label>
               <div className="mt-2">
                 <input
