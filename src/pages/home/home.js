@@ -22,6 +22,7 @@ export default function Home() {
     <>
       <Navbar />
       <div>home dashobard harpret {userName}</div>
+      <div>home panel {userName}</div>
     </>
   );
 }
