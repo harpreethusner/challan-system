@@ -5,7 +5,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import { LoginContext } from "../../components/LoginContext";
+import { LoginContext } from "../../context/LoginContext";
 
 export const Login = () => {
   const [formData, setFormData] = useState({ username: "", password: "" });

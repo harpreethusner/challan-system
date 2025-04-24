@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import { Navbar } from "../../components/navbar";
 
 export default function Home() {
   const [userName, setUserName] = useState("");
@@ -17,5 +18,11 @@ export default function Home() {
     getUserDetail();
   }, []);
 
-  return <div>home harpret {userName}</div>;
+  return (
+    <>
+      
+        <Navbar />
+      <div>home harpret {userName}</div>
+    </>
+  );
 }
