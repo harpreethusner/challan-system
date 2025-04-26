@@ -32,6 +32,7 @@ export default function ChallanForm() {
   }, []);
 
   const handleChange = (e) => {
+    debugger;
     const { name, value, files } = e.target;
     if (name === "image1" || name === "image2") {
       setFormData({ ...formData, [name]: files[0] });
