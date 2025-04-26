@@ -1,28 +1,15 @@
-import React, { useEffect, useState } from "react";
-import toast from "react-hot-toast";
+import React from "react";
+
 import { Navbar } from "../../components/navbar";
+import ChallanForm from "../../components/challanForm";
 
 export default function Home() {
-  const [userName, setUserName] = useState("");
-
-  async function getUserDetail() {
-    let name = await localStorage.getItem("fullName");
-    if (name?.length > 0) {
-      setUserName(name);
-    } else {
-      toast.error("unable to fetch data");
-    }
-  }
-
-  useEffect(() => {
-    getUserDetail();
-  }, []);
-
   return (
     <>
       <Navbar />
-      <div>home dashobard harpret {userName}</div>
-      <div>home panel {userName}</div>
+      <div className="w-full h-screen flex flex-col items-center justify-center bg-gray-100">
+        <ChallanForm />
+      </div>
     </>
   );
 }
